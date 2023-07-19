@@ -25,12 +25,8 @@ function checkWin(latestAddition){
     let j = latestAddition[1];
 
     for (let k=0; k < 3; k++){
-        if( i && j ){
-            i--;
-            j--;
-        }else{
-            break;
-        } 
+        if(!(i && j)) break;
+        i--;j--;
     }
 
     for (; i < columns-3 && j < rows-3; i++,j++){
