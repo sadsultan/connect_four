@@ -21,17 +21,22 @@ function placeToken(selection, playerToken) {
 function checkWin(latestAddition){
     let i = latestAddition[0];
     let j = latestAddition[1];
+
     for (let k=0; k < 3; k++){
-        if(i && j){
+        if( i && j ){
             i--;
             j--;
         }else{
             break;
         } 
     }
+
     for (; i < columns-3 && j < rows-3; i++,j++){
+        // Testing the diagonals
         if (board[i][j] && board[i+1][j+1] && board[i+2][j+2] && board[i+3][j+3]) return true;
+        // Testing the columns 
         if (board[latestAddition[0]][j] && board[latestAddition[0]][j+1] && board[latestAddition[0]][j+2] && board[latestAddition[0]][j+3]) return true;
+        // Testing the rows
         if (board[i][latestAddition[1]] && board[i+1][latestAddition[1]] && board[i+2][latestAddition[1]] && board[i+3][latestAddition[1]]) return true;
     }
     return false;
