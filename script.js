@@ -41,7 +41,7 @@ function checkWin(board ,latestAddition){
     return 0;
 }  
 
-function checkDraw(){
+function checkDraw(board){
     for (let i = 0; i < columns; i++){
         if (board[i].includes(0)) return false;
     }
@@ -55,5 +55,5 @@ function computerMove() {
 
 function evaluateBoard(){
     // Evaluate the board here
-    
+
 }
