@@ -41,3 +41,10 @@ function checkWin(latestAddition){
     }
     return false;
 }  
+
+function checkDraw(){
+    for (let i = 0; i < columns; i++){
+        if (board[i].includes(0)) return false;
+    }
+    return true;
+}
