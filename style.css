@@ -1,0 +1,103 @@
+.cell {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 10vh;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: #fff;
+    margin: 5px;
+    padding: 0;
+}
+
+.cell:hover {
+    box-shadow: -1 -1 2px #000;
+}
+
+.col {
+    background-color: lightgrey;
+    padding: 5px;
+    margin: 0;
+    border: 1px solid black;
+}
+
+.col:hover {
+    background-color: darkgray;
+    box-shadow: -1 -1 2px #000;
+}
+
+.start {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: large;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start:hover {
+    background-color: white;
+    color: black;
+}
+
+body {
+    display: flex;
+    gap: 3vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.board {
+    display: flex;
+}
+
+.messageDisplay {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    border: 1px solid darkgray;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.message {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.close, .playAgain {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 20px;
+    font-size: large;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
